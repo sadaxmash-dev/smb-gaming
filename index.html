@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HONG LIM - Anime Zone</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #050b18;
+  color: white;
+}
+
+header {
+  background: #08152b;
+  text-align: center;
+  padding: 22px 10px;
+  border-bottom: 2px solid #00c8ff;
+  box-shadow: 0 0 18px #0077ff55;
+}
+
+header h1 {
+  color: #00c8ff;
+  margin: 0;
+  font-size: 30px;
+  text-shadow: 0 0 15px #008cff;
+}
+
+header p {
+  color: #9edfff;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 13px 5px;
+  background: #0b1930;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: #142b49;
+}
+
+nav a:hover {
+  background: #00aaff;
+  color: #00101c;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 15px;
+  background: radial-gradient(circle at top, #123c70, #050b18 75%);
+}
+
+.logo {
+  width: 175px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 16px;
+  border: 2px solid #00c8ff;
+  box-shadow: 0 0 22px #008cff88;
+}
+
+.hero h2 {
+  color: #00c8ff;
+  font-size: 25px;
+}
+
+.hero p {
+  color: #c3d9f5;
+  line-height: 1.8;
+}
+
+.section-title {
+  text-align: center;
+  color: #00c8ff;
+  margin: 28px 10px 18px;
+}
+
+.search-box {
+  display: block;
+  width: 90%;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid #00aaff;
+  background: #0d1d35;
+  color: white;
+  font-size: 16px;
+}
+
+.anime-list {
+  padding: 0 14px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.anime-card {
+  background: #0d1d35;
+  border: 1px solid #167bce;
+  border-radius: 15px;
+  margin: 18px 0;
+  padding: 18px;
+  box-shadow: 0 0 15px #0077ff22;
+}
+
+.anime-card h3 {
+  color: #00c8ff;
+  margin-top: 0;
+}
+
+.anime-card p {
+  color: #c5d7ed;
+  line-height: 1.8;
+}
+
+.tag {
+  display: inline-block;
+  background: #123c70;
+  color: #9edfff;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.info-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #00c8ff;
+  color: #04101e;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.news {
+  margin: 25px 14px;
+  padding: 20px;
+  max-width: 820px;
+  border-radius: 15px;
+  border: 1px solid #167bce;
+  background: #0b1930;
+}
+
+.news h3 {
+  color: #00c8ff;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 25px 12px;
+  text-align: center;
+  background: #08152b;
+  color: #8eb5dd;
+  border-top: 1px solid #167bce;
+  line-height: 1.8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>HONG LIM</h1>
+  <p>GAMING • ANIME • </p>
+</header>
+
+<nav>
+  <a href="#home">🏠 Home</a>
+  <a href="#anime">⚡ Anime Zone</a>
+  <a href="#news">📰 News</a>
+</nav>
+
+<section class="hero" id="home">
+  <img class="logo"
+       src="https://i.ibb.co/XZ1sT2bQ/IMG-7488.jpg"
+       alt="SMB GAMING Logo">
+
+  <h2>សួរស្ដី ចែធា ⚡</h2>
+
+  <p>
+    សូមស្វាគមន៍មកកាន់ ការសរសេរកូឆ្គួតៗ!<br>
+    ផ្នែក IT សម្រាប់អ្នកស្រឡាញ់ IT ទាំងអស់ 💙
+  </p>
+
+  <a href="#anime" class="info-button">
+    ស្វែងរក ANIME 🔥
+  </a>
+</section>
+
+<h2 class="section-title" id="anime">⚡ POPULAR ANIME</h2>
+
+<input
+  class="search-box"
+  type="text"
+  id="searchAnime"
+  placeholder="🔎 ស្វែងរក Anime..."
+  oninput="searchAnime()">
+
+<section class="anime-list" id="animeList">
+
+  <article class="anime-card">
+    <span class="tag">ACTION • FANTASY</span>
+    <h3>🔥 Mashle: Magic and Muscles</h3>
+    <p>
+      រឿងអំពី Mash ដែលគ្មានវេទមន្ត
+      ប៉ុន្តែមានកម្លាំងរាងកាយខ្លាំងមិនធម្មតា។
+      គាត់ត្រូវប្រឈមមុខនឹងការសាកល្បងក្នុងពិភពវេទមន្ត។
+    </p>
+    <button class="info-button"
+      onclick="showInfo('Mashle','Mash ប្រើកម្លាំងរាងកាយដើម្បីប្រឈមមុខនឹងបញ្ហាក្នុងពិភពវេទមន្ត។')">
+      អានព័ត៌មាន
+    </button>
+  </article>
+
+  <article class="anime-card">
+    <span class="tag">ACTION • NINJA</span>
+    <h3>🍥 Naruto</h3>
+    <p>
+      រឿងអំពី Naruto ជានិនចាវ័យក្មេង
+      ដែលមានក្តីស្រមៃចង់ក្លាយជាមេភូមិ Hokage
+      និងចង់ឲ្យមនុស្សគ្រប់គ្នាទទួលស្គាល់គាត់។
+    </p>
+    <button class="info-button"
+      onclick="showInfo('Naruto','Naruto ខិតខំហ្វឹកហាត់ និងប្រឈមមុខនឹងគូប្រជែង ដើម្បីសម្រេចក្តីស្រមៃរបស់ខ្លួន។')">
+      អានព័ត៌មាន
+    </button>
+  </article>
+
+  <article class="anime-card">
+    <span class="tag">ACTION • ADVENTURE</span>
+    <h3>⚔️ One Piece</h3>
+    <p>
+      ដំណើរផ្សងព្រេងរបស់ Luffy និងមិត្តភក្តិ
+      ដែលធ្វើដំណើរតាមសមុទ្រ ដើម្បីស្វែងរកកំណប់ One Piece។
+    </p>
+    <button class="info-button"
+      onclick="showInfo('One Piece','Luffy និងក្រុមមិត្តភក្តិធ្វើដំណើរផ្សងព្រេង ដើម្បីសម្រេចក្តីស្រមៃរបស់ពួកគេ។')">
+      អានព័ត៌មាន
+    </button>
+  </article>
+
+  <article class="anime-card">
+    <span class="tag">ACTION • DARK FANTASY</span>
+    <h3>🐉 Battle Through the Heavens</h3>
+    <p>
+      រឿងបែប Fantasy អំពី Xiao Yan
+      ដែលខិតខំហ្វឹកហាត់ និងប្រយុទ្ធ
+      ដើម្បីពង្រឹងសមត្ថភាពរបស់ខ្លួន។
+    </p>
+    <button class="info-button"
+      onclick="showInfo('Battle Through the Heavens','Xiao Yan ចាប់ផ្តើមដំណើរដ៏លំបាក ដើម្បីពង្រឹងកម្លាំង និងសម្រេចគោលដៅរបស់ខ្លួន។')">
+      អានព័ត៌មាន
+    </button>
+  </article>
+
+</section>
+
+<section class="news" id="news">
+  <h2 class="section-title">📰 ANIME NEWS</h2>
+  <h3>ព័ត៌មាន Anime នៅ SMB GAMING</h3>
+  <p>
+    នៅទីនេះ បងអាចបន្ថែមព័ត៌មានអំពី Anime ថ្មីៗ
+    កាលបរិច្ឆេទចេញភាគ និងព័ត៌មានដែលអ្នកគាំទ្រចង់ដឹង។
+  </p>
+  <p>
+    💡 ចំណាំ៖ ព័ត៌មាននៅលើទំព័រនេះជាអត្ថបទគំរូ
+    មិនមែនជាព័ត៌មានថ្មីៗដែលបានផ្ទៀងផ្ទាត់ទេ។
+  </p>
+</section>
+
+<footer>
+  © 2026 HONG LIM<br>
+  Anime • Gaming • <br>
+  Made with 💙 by LIM
+</footer>
+
+<script>
+function showInfo(title, description) {
+  alert(title + "\n\n" + description);
+}
+
+function searchAnime() {
+  var input = document.getElementById("searchAnime");
+  var filter = input.value.toLowerCase();
+  var cards = document.querySelectorAll(".anime-card");
+
+  cards.forEach(function(card) {
+    var text = card.innerText.toLowerCase();
+    card.style.display =
+      text.includes(filter) ? "" : "none";
+  });
+}
+</script>
+
+</body>
+</html>
